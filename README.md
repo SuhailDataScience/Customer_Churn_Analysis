@@ -88,6 +88,7 @@ On the single train/test split, the Decision Tree looks like the best performer 
 - **Mailed check users churn nearly 2.5x more than credit card users** (37.82% vs. 14.80%), suggesting payment friction or an older/lower-engagement customer segment.
 - **Revenue at risk:** churned customers represent 17.52% of total revenue.
 - Tenure and age group showed only modest variation in this dataset (~1–8 points spread) — weaker signal than contract type or payment method.
+- **Churn prediction:** XGBoost and Random Forest achieve ~0.83 nested-CV recall on churn detection, essentially tied; Decision Tree's higher single-split recall (0.85) doesn't hold up under nested CV, dropping to 0.79 — exposed as overfit to that particular split, not a real advantage.
 
 ---
 **Author:** [Suhail](https://github.com/SuhailDataScience)
